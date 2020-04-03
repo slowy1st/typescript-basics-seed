@@ -1,11 +1,46 @@
-function multiply(a, b = 25) {
-    return a * b;
+const pizza = {
+    name: 'Pepperoni',
+    price: 15
+};
+
+const toppings = ['pepperoni'];
+
+const order = {
+    pizza: pizza,
+    toppings: toppings
+};
+
+// in es6:
+const orderInEs6 = {pizza, toppings};
+// creates the same, creates properties based of the value of another property
+
+console.log(order);
+console.log(orderInEs6);
+
+// also works in functions, wtf, how?
+function createOrder(pizza, topping) {
+    return { pizza, topping};
 }
 
-// basically:
-// if (!b) {
-//     b = 25;
-// }
+console.log(createOrder(pizza, toppings));
 
-console.log(multiply(7, 13));
-console.log(multiply(13));
+const anotherPizza = {
+    name: 'Pepperoni',
+    price: 15,
+    getName: function() {
+        return this.name;
+    }
+};
+
+console.log(anotherPizza.getName());
+
+// ES6-style:
+const anotherPizza2 = {
+    name: 'Pepperoni',
+    price: 15,
+    // property with :, functions with ()
+    getName() {
+        return this.name;
+    }
+};
+console.log(anotherPizza2.getName());
