@@ -24,7 +24,7 @@ function createOrder(pizza: any, topping: any) {
 
 console.log(createOrder(pizza, toppings));
 
-const anotherPizza = {
+const pepperoniPizza = {
     name: 'Pepperoni',
     price: 15,
     getName: function() {
@@ -32,7 +32,7 @@ const anotherPizza = {
     }
 };
 
-console.log(anotherPizza.getName());
+console.log(pepperoniPizza.getName());
 
 // ES6-style:
 const anotherPizza2 = {

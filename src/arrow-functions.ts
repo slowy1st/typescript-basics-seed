@@ -23,13 +23,13 @@ pizzas.map(pizza => pizza.name.toUpperCase());
 
 
 // this references to const pizza!
-const pizza = {
+const pizza2 = {
     name: 'Blazing Inferno',
     getName: function () {
         console.log(this);
     }
 };
-console.log(pizza);
+console.log(pizza2);
 
 // what if we have a timeout? -> this "this" does not work
 // const pizzaWithTimeout = {
@@ -61,6 +61,6 @@ console.log(pizzaWithTimeout);
 
 const anotherPizza = {
     name: 'anotherPizza',
-    getName: () => pizza.name
+    getName: () => pizza2.name
 };
 console.log(anotherPizza.getName());
