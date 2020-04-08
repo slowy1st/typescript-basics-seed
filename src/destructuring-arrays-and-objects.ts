@@ -3,14 +3,14 @@ const component = {
     vendor: 'ASUS'
 };
 
-function order(component: any) {
+function order1(component: any) {
     console.log(component);
 }
 
-order(component);
+order1(component);
 
 // with destructuring params
-function order2({name, vendor}) {
+function order2({name, vendor} : {name: string, vendor: string}) {
     console.log(name, vendor);
 }
 
