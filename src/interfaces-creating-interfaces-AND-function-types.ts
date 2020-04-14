@@ -9,6 +9,7 @@ interface Sizes {
 
 interface PizzaAgain extends Sizes {
     name: string;
+    toppings?: number;
 
     getAvailableSizes(): string[]
 }
@@ -17,7 +18,9 @@ let pizzaAgain: PizzaAgain;
 
 function createPizza(name: string, sizes: string[]): PizzaAgain {
     return {
-        name, sizes, getAvailableSizes() {
+        name,
+        sizes,
+        getAvailableSizes() {
             return this.sizes;
         }
     }
@@ -29,3 +32,7 @@ pizzaAgain = createPizza('Hawaii', ['small', 'medium']);
 interface Pizzas {
     data: PizzaAgain[]
 }
+
+console.log(pizzaAgain);
+pizzaAgain.toppings = 3;
+console.log(pizzaAgain);
