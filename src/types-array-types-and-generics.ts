@@ -3,9 +3,9 @@ const sizes = ['small', 'medium', 'large'];
 const sizes2: string[] = ['small', 'medium', 'large'];
 
 // w/ generic type
-let toppings: string[];
+let toppings7: string[];
 
-toppings = ['pepperon', 'bacon'];
+toppings7 = ['pepperon', 'bacon'];
 
 let toppings2: Array<string>;
 toppings2 = ['blub'];
