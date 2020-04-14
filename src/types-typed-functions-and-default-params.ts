@@ -3,7 +3,7 @@ let sumOrder3: (price: number, quantity?: number) => number;
 
 // old way
 sumOrder3 = (x, y) => {
-    if (y) {
+    if (!y) {
         return x;
     }
 
