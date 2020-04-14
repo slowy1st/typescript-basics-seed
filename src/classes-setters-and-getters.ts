@@ -15,6 +15,10 @@ class Sizes3 {
 const sizes = new Sizes3(['small', 'medium']);
 console.log(sizes);
 
+// calls setter
+sizes.availableSizes = ['medium', 'large'];
+
+// calls getter
 sizes.availableSizes = ['medium', 'large'];
 
 console.log(sizes);
