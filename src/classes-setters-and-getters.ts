@@ -12,13 +12,13 @@ class Sizes3 {
     }
 }
 
-const sizes = new Sizes3(['small', 'medium']);
-console.log(sizes);
+const sizes3 = new Sizes3(['small', 'medium']);
+console.log(sizes3);
 
 // calls setter
-sizes.availableSizes = ['medium', 'large'];
+sizes3.availableSizes = ['medium', 'large'];
 
 // calls getter
-sizes.availableSizes = ['medium', 'large'];
+sizes3.availableSizes = ['medium', 'large'];
 
-console.log(sizes);
+console.log(sizes3);
