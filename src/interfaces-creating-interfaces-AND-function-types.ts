@@ -5,14 +5,17 @@
 
 interface PizzaAgain {
     name: string;
-    sizes: string[]
+    sizes: string[];
+    getAvailableSizes(): string[]
 }
 
 let pizzaAgain: PizzaAgain;
 
 function createPizza(name: string, sizes: string[]): PizzaAgain {
     return {
-        name, sizes
+        name, sizes, getAvailableSizes() {
+            return this.sizes;
+        }
     }
 }
 
