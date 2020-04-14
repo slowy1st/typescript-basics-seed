@@ -11,7 +11,8 @@ interface PizzaAgain extends Sizes {
     name: string;
     toppings?: number;
 
-    getAvailableSizes(): string[]
+    getAvailableSizes(): string[];
+    [key: number]: string
 }
 
 let pizzaAgain: PizzaAgain;
@@ -36,3 +37,6 @@ interface Pizzas {
 console.log(pizzaAgain);
 pizzaAgain.toppings = 3;
 console.log(pizzaAgain);
+
+pizzaAgain[1] = 'abc;'
+console.log(pizzaAgain[1]);
