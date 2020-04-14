@@ -3,9 +3,13 @@
 //     sizes: string[]
 // }
 
-interface PizzaAgain {
-    name: string;
+interface Sizes {
     sizes: string[];
+}
+
+interface PizzaAgain extends Sizes {
+    name: string;
+
     getAvailableSizes(): string[]
 }
 
